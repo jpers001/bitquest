@@ -92,9 +92,8 @@ public class InventoryEvents implements Listener {
         trades.add(new Trade(new ItemStack(Material.EMPTY_MAP,1),3));
         trades.add(new Trade(new ItemStack(Material.PUMPKIN,6),1));
 
-
-
     }
+    
     @EventHandler
     void onInventoryClick(final InventoryClickEvent event) throws IOException, ParseException, org.json.simple.parser.ParseException {
         final Player player = (Player) event.getWhoClicked();
